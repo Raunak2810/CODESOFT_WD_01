@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raunak Mishra | Web Developer & Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#connect">Connect</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="intro">
+    <div class="intro-content" data-aos="zoom-in">
+      <img src="img\PROFIL PIC 2.jpg" alt="Raunak Mishra" class="profile-pic">
+      <div>
+        <h1>Hello! I'm <span class="highlight">Raunak Mishra</span></h1>
+        <p><span id="typed" class="typed-text"></span></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <p class="intro-box">
+      I'm a self-driven web developer and UI/UX enthusiast from India who loves building clean, functional, and visually appealing websites. I focus on creating responsive designs, smooth animations, and pixel-perfect interfaces. With hands-on experience in HTML, CSS, JavaScript, React.js, Node.js, and design tools like Figma and Canva, I strive to deliver projects that make an impact.
+      <br /><br />
+      When I'm not coding, you can find me sketching UI ideas, exploring new tech trends, or sipping chai while listening to lo-fi beats.
+    </p>
+    <a href="img\resume.pdf" download class="resume-btn">Download Resume</a>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-box">
+      <span>HTML5 & CSS3</span>
+      <span>JavaScript (ES6+)</span>
+      <span>React.js & Node.js</span>
+      <span>Python</span>
+      <span>UI/UX Design</span>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="experience-boxes">
+      <div class="exp-card">
+        <img src="img/INTERN CERT.jpg" alt="Internship Certificate">
+        <p>Internship Certificate</p>
+      </div>
+      <div class="exp-card">
+        <img src="img/LOR1.jpg" alt="LOR">
+        <p>Letter of Recommendation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" data-aos="fade-up">
+    <h2>Certificates</h2>
+    <div class="cert-image-grid">
+      <img src="img/CERT 1.jpg" alt="Certificate 1" class="cert-img" />
+      <img src="img/CERT2.jpg" alt="Certificate 2" class="cert-img" />
+      <img src="img/CERT3.jpg" alt="Certificate 3" class="cert-img" />
+      <img src="img/CERT 4.jpg" alt="Certificate 4" class="cert-img" />
+      <img src="img/CERT 5.jpg" alt="Certificate 5" class="cert-img" />
+      <img src="img/CERT6.jpg" alt="Certificate 6" class="cert-img" />
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section id="connect" data-aos="fade-up">
+    <h2>Connect with Me</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/raunak-mishra-80a931331" target="_blank" class="social-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://www.instagram.com/ms.raunak._/profilecard/?igsh=MWo2dHVyaWcyNnF2OA==" target="_blank" class="social-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://github.com/raunaK2810" target="_blank" class="social-btn">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:raunakmishrabxr@gmail.com">raunakmishrabxr@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Made with 💙 by Raunak Mishra
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script>
+    AOS.init();
+
+    // Typing effect
+    var typed = new Typed("#typed", {
+      strings: [
+        "I'm a passionate UI/UX Designer",
+        "I'm a Full Stack Developer",
+        "I love clean, modern web design",
+        "Let's build something amazing!"
+      ],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+
+    // Particles.js Config
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#0077cc" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 4, random: true },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#0077cc",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1.5
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 80 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
